@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seqüència interactiva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Scroll capture layer (only active in scroll mode) -->
+    <div id="scroll-track">
+        <div class="scroll-inner"></div>
+    </div>
+
+    <!-- Canvas stage -->
+    <main class="sequence-stage" id="principal"></main>
+
+    <!-- Scroll progress bar -->
+    <div id="scroll-indicator"></div>
+
+    <!-- Mode switch -->
+    <div id="mode-switch" role="group" aria-label="Mode de control">
+        <span class="switch-label active" id="label-mouse">Ratolí</span>
+        <div class="toggle-pill" id="toggle-pill" role="switch" aria-checked="false" tabindex="0">
+            <div class="toggle-knob"></div>
+        </div>
+        <span class="switch-label" id="label-scroll">Scroll</span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
